@@ -2,26 +2,11 @@ package com.example.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class PlainLoginTest {
-    private WebDriver driver;
-
-    @BeforeClass
-    public void setUp() {
-        driver = new ChromeDriver();
-    }
-
-    @AfterClass
-    public void tearDown() {
-        driver.quit();
-    }
+public class PlainLoginTest extends BaseTest{
 
     @Test
     public void login() {
